@@ -13,9 +13,8 @@ html {
 }
 
 header,
-#history,
-#team {
-  border: 1px solid blue;
+#history {
+  /* border: 5px solid blue; */
   min-height: 100vh;
   min-height: 100lvh;
 }
@@ -135,6 +134,15 @@ h1 span {
   line-height: 2rem;
 }
 
+#team {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: stretch;
+  /* height: 1130px; */
+  height: 1056px;
+}
+
 .team-heading-band {
   background-color: #fff;
 }
@@ -192,26 +200,33 @@ h1 span {
 #home-tab-pane {
   background: url('CT_SkillTest_v3-assets/photo-1417021423914-070979c8eb34.jpeg') no-repeat;
   background-size: cover;
-  height: 545px;
-  border: 2px solid red;
+  background-position: 0px -400px;
+  width: 100%;
+}
+
+#mountain2-tab-pane {
+  background: url('CT_SkillTest_v3-assets/photo-1414449381078-c7768b8f19b8.jpeg') no-repeat;
+  width: 100%;
+  background-size: cover;
 }
 
 #climbTabContent {
-  border: 2px solid blue;
-  height: 100%;
+  display: flex;
+  flex-grow: 1;
 }
 
 .table-container {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   max-width: 1344px;
-  margin: 6rem auto 0;
-  padding-left: 1.5rem;
+  margin: 8.5rem auto 0;
+  padding-left: 3rem;
 }
 
 
 table {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   font-size: 1.33rem;
 }
 
@@ -219,15 +234,15 @@ th {
   font-family: 'Oswald', sans-serif;
   font-size: 2.7rem;
   color: #414f6b;
-  padding: 0.8rem 3rem;
+  padding: 0.8rem 3.5rem;
 }
 
 table td:nth-child(1) {
-  padding: 0 3rem;
+  padding: 0 3.5rem;
 }
 
 table td:nth-child(2) {
-  padding: 0 3rem 0 0;
+  padding: 0 3.5rem 0 0;
 }
 
 table tr:nth-child(4) td {
