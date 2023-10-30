@@ -35,23 +35,31 @@
       <div class="carousel-container">
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button id="ind1" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button id="ind2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button id="ind3" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button id="ind4" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="CT_SkillTest_v3-assets/carouseIImg1.jpeg" class="d-block w-25" alt="...">
+              <div class="col-md-3 px-1">
+                <img src="CT_SkillTest_v3-assets/carouseIImg1.jpeg" class="d-block w-100" alt="...">
+              </div>
             </div>
             <div class="carousel-item">
-              <img src="CT_SkillTest_v3-assets/carouselImg2.jpeg" class="d-block w-25" alt="...">
+              <div class="col-md-3 px-1">
+                <img src="CT_SkillTest_v3-assets/carouselImg2.jpeg" class="d-block w-100" alt="...">
+              </div>
             </div>
             <div class="carousel-item">
-              <img src="CT_SkillTest_v3-assets/carouseIImg1.jpeg" class="d-block w-25" alt="...">
+              <div class="col-md-3 px-1">
+                <img src="CT_SkillTest_v3-assets/carouseIImg1.jpeg" class="d-block w-100" alt="...">
+              </div>
             </div>
             <div class="carousel-item">
-              <img src="CT_SkillTest_v3-assets/carouselImg2.jpeg" class="d-block w-25" alt="...">
+                <div class="col-md-3 px-1">
+                  <img src="CT_SkillTest_v3-assets/carouselImg2.jpeg" class="d-block w-100" alt="...">
+                </div>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -226,5 +234,20 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    let images = document.querySelectorAll('.carousel .carousel-item');
+    images.forEach((image) => {
+      const slideNum = 4;
+      let next = image.nextElementSibling;
+      for (let i = 0; i < slideNum; i++) {
+        if(!next) {
+          next = images[0];
+        }
+        let cloneChild = next.cloneNode(true);
+        image.appendChild(cloneChild.children[0]);
+        next = next.nextElementSibling 
+      }
+    })
+  </script>
 </body>
 </html>

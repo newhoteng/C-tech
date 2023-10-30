@@ -198,6 +198,10 @@ h1 span {
   height: 100%;
 }
 
+#teamAccordion {
+  display: none;
+}
+
 .table-container {
   max-width: 1344px;
   margin: 8.5rem auto 0;
@@ -281,8 +285,40 @@ footer {
   justify-content: center;
 }
 
-#teamAccordion {
-  display: none;
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-end.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(25%);
+}
+
+.carousel-inner .carousel-item-start.active,
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-25%);
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -3rem;
+  display: flex;
+}
+
+#ind1,
+#ind2,
+#ind3,
+#ind4 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
 }
 
 /* Tab links styling */
@@ -348,5 +384,26 @@ footer {
 
   .largeIcon img {
     width: 70%;
+  }
+
+  /* carousel */
+  .carousel-inner .carousel-item > div {
+    display: none;
+    /* border: 3px solid yellowgreen; */
+  }
+
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+    /* border: 2px solid red; */
+  }
+
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    /* display: flex; */
+    /* border: 4px solid red; */
+    /* gap: 1rem; */
+    align-items: center;
+    justify-content: center;
   }
 }
