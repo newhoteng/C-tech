@@ -14,7 +14,6 @@ html {
 
 header,
 #history {
-  /* border: 5px solid blue; */
   min-height: 100vh;
   min-height: 100lvh;
   position: relative;
@@ -25,51 +24,12 @@ header {
   background-size: cover;
 }
 
-header h1 {
-  border: 2px solid red;
-  height: calc(100vh - 4rem);
-  height: calc(100lvh - 4rem);
-  margin: 0;
-  font-family: 'Oswald', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 10.5rem;
-  font-weight: 450;
-}
-
 .losangeles, .mountains {
   text-align: center;
 }
 
-/* .link {
-  display: flex;
-  align-items: center;
-  gap: 0.1rem;
-  padding: 0.3rem 0;
-  width: fit-content;
-  position: relative;
-} */
-
-/* .link::after {
-  content: '';
-  height: 1.5px;
-  width: 0;
-  background: red;
-  position: absolute;
-  left: 0;
-  bottom: -0.5px;
-  transition: 0.5s;
-}
-
-.link:hover::after {
-  width: 100%;
-} */
-
 .main-nav {
   color: #fff;
-  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,7 +37,6 @@ header h1 {
   margin: 0 auto;
   padding: 0 1rem;
   height: 4rem;
-  /* font-size: 1rem; */
 }
 
 .sticky-nav-container {
@@ -97,7 +56,6 @@ header h1 {
   display: flex;
   align-items: center;
   gap: 3rem;
-  /* border: 1px solid brown; */
   font-style: italic;
   font-weight: 500;
   margin: 0;
@@ -124,7 +82,6 @@ nav[class="sticky-nav main-nav"] li {
 
 main h1 {
   font-family: 'Oswald', sans-serif;
-  /* border: 4px solid red; */
   font-size: 11.3rem;
   color: rgba(65, 79, 107, 0.5);
   position: relative;
@@ -135,8 +92,6 @@ main h1 {
   max-width: 1344px;
   margin: 0 auto 0;
   padding: 3rem 0 0 0.5rem;
-  /* margin-top: 4rem; */
-  /* border: 2px solid red; */
 }
 
 #history h1 span {
@@ -148,13 +103,11 @@ h1 span {
   font-family: 'Oswald', sans-serif;
   font-size: 2.7rem;
   color: #414f6b;
-  /* border: 2px solid red; */
   position: absolute;
 }
 
 #history p {
   max-width: 1344px;
-  /* border: 1px solid red; */
   margin: -1.8rem auto 0;
   padding: 0 6rem;
   font-size: 1.33rem;
@@ -164,9 +117,6 @@ h1 span {
 #team {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  justify-content: stretch;
-  /* height: 1130px; */
   height: 1056px;
 }
 
@@ -176,7 +126,6 @@ h1 span {
 
 .team-heading-container {
   display: flex;
-  border: 1px solid blue;
   max-width: 1344px;
   margin: 0 auto;
   padding: 0 4rem;
@@ -186,7 +135,6 @@ h1 span {
 }
 
 #team p {
-  /* border: 5px solid red; */
   font-size: 1.33rem;
   line-height: 2rem;
   margin: 0;
@@ -208,11 +156,9 @@ h1 span {
 }
 
 .team-tab {
-  /* border: 5px solid yellow; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  /* gap: 1rem; */
   max-width: 1344px;
   width: 100%;
   margin: 0 auto;
@@ -221,7 +167,6 @@ h1 span {
 
 .team-tab div {
   padding: 0 1.5rem;
-  border: 1px solid white;
 }
 
 #home-tab-pane,
@@ -230,18 +175,26 @@ h1 span {
   background-size: cover;
   /* background-position: 0px -400px; */
   width: 100%;
+  height: 100%;
 }
 
 #mountain2-tab-pane,
 #flush-collapseTwo {
   background: url('CT_SkillTest_v3-assets/photo-1414449381078-c7768b8f19b8.jpeg') no-repeat;
   width: 100%;
+  height: 100%;
   background-size: cover;
+}
+
+#teamTab {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 #climbTabContent {
   display: flex;
-  flex-grow: 1;
+  height: 100%;
 }
 
 .table-container {
@@ -252,8 +205,6 @@ h1 span {
 
 
 table {
-  /* border: 1px solid red; */
-  background-color: #fff;
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 1.33rem;
 }
@@ -290,7 +241,6 @@ footer {
 }
 
 .footer-container {
-  /* border: 2px solid white; */
   width: 100%;
   max-width: 1344px;
   margin: 0 auto;
@@ -298,14 +248,12 @@ footer {
   align-items: center;
   justify-content: space-between;
   color: #63769d;
-  /* font-size: 1rem; */
   font-weight: 600;
   font-style: italic;
   padding: 0 1rem;
 }
 
 .footer-container p {
-  /* border: 2px solid red; */
   margin: 0;
 }
 
@@ -316,8 +264,6 @@ footer {
 /* carousel */
 
 .carousel-container {
-  border: 2px solid lime;
-  /* background-color: #414f6b; */
   background-color: rgba(65, 79, 107, 0.8);
   position: absolute;
   bottom: 0;
@@ -327,7 +273,6 @@ footer {
 }
 
 .carousel {
-  border: 1px solid red;
   max-width: 1344px;
   margin: 0 auto;
   display: flex;
@@ -356,7 +301,6 @@ footer {
   }
 
   #team p {
-    /* border: 5px solid red; */
     font-size: 1.33rem;
     line-height: 2rem;
     margin: 0;
@@ -377,16 +321,15 @@ footer {
   }
 
   #team {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: stretch; */
-    
-    /* height: 1130px; */
     height: fit-content;
     padding: 1rem 0;
   }
 
   #teamTab {
     display: none;
+  }
+
+  .largeIcon img {
+    width: 70%;
   }
 }
