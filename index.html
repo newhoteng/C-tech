@@ -33,6 +33,40 @@
     <section id="history">
       <h1>01.<span id="titlehistory">HISTORY</span></h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.</p>
+      
+      <div class="carousel-container">
+        <div id="carouselExampleIndicators" class="carousel slide col-md-12">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="CT_SkillTest_v3-assets/carouseIImg1.jpeg" class="d-block w-25" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="CT_SkillTest_v3-assets/carouselImg2.jpeg" class="d-block w-25" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="CT_SkillTest_v3-assets/carouseIImg1.jpeg" class="d-block w-25" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="CT_SkillTest_v3-assets/carouselImg2.jpeg" class="d-block w-25" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
     </section>
     <section id="team">
       <div class="team-heading-band">
@@ -48,68 +82,146 @@
         </nav>
       </div> -->
 
-      <div class="team-nav-container">
-        <ul class="nav nav-tabs team-tab" id="climbTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <div class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">MOUNTAIN 1</div>
-          </li>
-          <li class="nav-item" role="presentation">
-            <div class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#mountain2-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">MOUNTAIN 2</div>
-          </li>
-        </ul>
-      </div>
-      <div class="tab-content" id="climbTabContent">
-        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-          <div class="table-container">
-            <table>
-              <tr>
-                <th colspan="3">SCHEDULE</th>
-              </tr>
-              <tr>
-                <td>25 Nov 2016</td>
-                <td>Vestibulum viverra</td>
-              </tr>
-              <tr>
-                <td>28 Nov 2016</td>
-                <td>Vestibulum viverra</td>
-              </tr>
-              <tr>
-                <td>18 Dec 2016</td>
-                <td>Vestibulum viverra</td>
-              </tr>
-              <tr>
-                <td>7 Jan 2017</td>
-                <td>Vestibulum viverra</td>
-              </tr>
-            </table>
+      <!-- Tabs -->
+      <div id="teamTab">
+        <div class="team-nav-container">
+          <ul class="nav nav-tabs team-tab" id="climbTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <div class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">MOUNTAIN 1</div>
+            </li>
+            <li class="nav-item" role="presentation">
+              <div class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#mountain2-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">MOUNTAIN 2</div>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content" id="climbTabContent">
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="table-container">
+              <table>
+                <tr>
+                  <th colspan="3">SCHEDULE</th>
+                </tr>
+                <tr>
+                  <td>25 Nov 2016</td>
+                  <td>Vestibulum viverra</td>
+                </tr>
+                <tr>
+                  <td>28 Nov 2016</td>
+                  <td>Vestibulum viverra</td>
+                </tr>
+                <tr>
+                  <td>18 Dec 2016</td>
+                  <td>Vestibulum viverra</td>
+                </tr>
+                <tr>
+                  <td>7 Jan 2017</td>
+                  <td>Vestibulum viverra</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="mountain2-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="table-container">
+              <table>
+                <tr>
+                  <th colspan="3">SCHEDULE</th>
+                </tr>
+                <tr>
+                  <td>25 Nov 2016</td>
+                  <td>Vestibulum viverra</td>
+                </tr>
+                <tr>
+                  <td>28 Nov 2016</td>
+                  <td>Vestibulum viverra</td>
+                </tr>
+                <tr>
+                  <td>18 Dec 2016</td>
+                  <td>Vestibulum viverra</td>
+                </tr>
+                <tr>
+                  <td>7 Jan 2017</td>
+                  <td>Vestibulum viverra</td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="mountain2-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-          <div class="table-container">
-            <table>
-              <tr>
-                <th colspan="3">SCHEDULE</th>
-              </tr>
-              <tr>
-                <td>25 Nov 2016</td>
-                <td>Vestibulum viverra</td>
-              </tr>
-              <tr>
-                <td>28 Nov 2016</td>
-                <td>Vestibulum viverra</td>
-              </tr>
-              <tr>
-                <td>18 Dec 2016</td>
-                <td>Vestibulum viverra</td>
-              </tr>
-              <tr>
-                <td>7 Jan 2017</td>
-                <td>Vestibulum viverra</td>
-              </tr>
-            </table>
+      </div>
+
+      <!-- Accordion -->
+      <div class="accordion accordion-flush" id="teamAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <div class="accordion-button collapsed team-nav-container" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              MOUNTAIN 1
+            </div>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#teamAccordion">
+            <div class="accordion-body">
+
+              <div class="table-container">
+                <table>
+                  <tr>
+                    <th colspan="3">SCHEDULE</th>
+                  </tr>
+                  <tr>
+                    <td>25 Nov 2016</td>
+                    <td>Vestibulum viverra</td>
+                  </tr>
+                  <tr>
+                    <td>28 Nov 2016</td>
+                    <td>Vestibulum viverra</td>
+                  </tr>
+                  <tr>
+                    <td>18 Dec 2016</td>
+                    <td>Vestibulum viverra</td>
+                  </tr>
+                  <tr>
+                    <td>7 Jan 2017</td>
+                    <td>Vestibulum viverra</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header team-nav-container">
+            <div class="accordion-button collapsed team-nav-container" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              MOUNTAIN 2
+            </div>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#teamAccordion">
+            <div class="accordion-body">
+              <div class="table-container">
+                <table>
+                  <tr>
+                    <th colspan="3">SCHEDULE</th>
+                  </tr>
+                  <tr>
+                    <td>25 Nov 2016</td>
+                    <td>Vestibulum viverra</td>
+                  </tr>
+                  <tr>
+                    <td>28 Nov 2016</td>
+                    <td>Vestibulum viverra</td>
+                  </tr>
+                  <tr>
+                    <td>18 Dec 2016</td>
+                    <td>Vestibulum viverra</td>
+                  </tr>
+                  <tr>
+                    <td>7 Jan 2017</td>
+                    <td>Vestibulum viverra</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
     </section>
   </main>
   <footer>

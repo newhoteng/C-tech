@@ -17,6 +17,7 @@ header,
   /* border: 5px solid blue; */
   min-height: 100vh;
   min-height: 100lvh;
+  position: relative;
 }
 
 header {
@@ -132,8 +133,10 @@ main h1 {
 
 #history h1 {
   max-width: 1344px;
-  margin: 0 auto;
+  margin: 0 auto 0;
+  padding: 3rem 0 0 0.5rem;
   /* margin-top: 4rem; */
+  /* border: 2px solid red; */
 }
 
 #history h1 span {
@@ -221,14 +224,16 @@ h1 span {
   border: 1px solid white;
 }
 
-#home-tab-pane {
+#home-tab-pane,
+#flush-collapseOne {
   background: url('CT_SkillTest_v3-assets/photo-1417021423914-070979c8eb34.jpeg') no-repeat;
   background-size: cover;
   /* background-position: 0px -400px; */
   width: 100%;
 }
 
-#mountain2-tab-pane {
+#mountain2-tab-pane,
+#flush-collapseTwo {
   background: url('CT_SkillTest_v3-assets/photo-1414449381078-c7768b8f19b8.jpeg') no-repeat;
   width: 100%;
   background-size: cover;
@@ -308,6 +313,32 @@ footer {
   display: flex;
 }
 
+/* carousel */
+
+.carousel-container {
+  border: 2px solid lime;
+  /* background-color: #414f6b; */
+  background-color: rgba(65, 79, 107, 0.8);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 1rem 2.5rem 1.5rem;
+}
+
+.carousel {
+  border: 1px solid red;
+  max-width: 1344px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#teamAccordion {
+  display: none;
+}
+
 @media all and (max-width: 768px) {
   html {
     font-size: 11.5px;
@@ -339,5 +370,23 @@ footer {
 
   .copyright-container {
     display: block;
+  }
+
+  #teamAccordion {
+    display: block;
+  }
+
+  #team {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: stretch; */
+    
+    /* height: 1130px; */
+    height: fit-content;
+    padding: 1rem 0;
+  }
+
+  #teamTab {
+    display: none;
   }
 }
