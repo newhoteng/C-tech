@@ -146,7 +146,7 @@ h1 span {
 }
 
 .team-nav-container {
-  height: 2.5rem;
+  /* height: 2.5rem; */
   background-color: #414f6b;
   color: #b0b4be;
   display: flex;
@@ -163,6 +163,7 @@ h1 span {
   width: 100%;
   margin: 0 auto;
   font-size: 1.7rem;
+  /* padding: 0.5rem; */
 }
 
 .team-tab div {
@@ -282,6 +283,22 @@ footer {
 
 #teamAccordion {
   display: none;
+}
+
+/* Tab links styling */
+
+.nav-item > div.nav-link {
+  color: #b0b4be;
+  padding: 0.2rem 1.5rem;
+  border: none;
+  border-radius: 0;
+}
+.nav-item > div.nav-link.active {
+  border-radius: none;
+  color: #414f6b;
+  background-color: #b0b4be;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 @media all and (max-width: 768px) {
